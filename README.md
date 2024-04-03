@@ -28,8 +28,8 @@ My challenge was to build out a recipe page and get it looking as close to the d
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/robbiedob21/recipe-page-main](https://github.com/robbiedob21/recipe-page-main)
+- Live Site URL: [robbiedob21-recipe.netlify.app/](robbiedob21-recipe.netlify.app/)
 
 ## My process
 
@@ -44,9 +44,9 @@ I learned how to use the tailwind.config.js file to extend font families, as wel
 
 ```js
 fontFamily: {
-				serif: ["young-serif", "georgia"],
-				sans: ["outfit", "verdana"],
-			}
+  serif: ["young-serif", "georgia"],
+  sans: ["outfit", "verdana"],
+}
 ```
 
 ``` css
