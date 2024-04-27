@@ -570,8 +570,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.m-8 {
-  margin: 2rem;
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .table {
@@ -586,14 +590,6 @@ video {
   height: auto;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-full {
   width: 100%;
 }
@@ -602,24 +598,8 @@ video {
   min-width: 100%;
 }
 
-.max-w-screen-lg {
-  max-width: 1024px;
-}
-
 .max-w-screen-md {
   max-width: 768px;
-}
-
-.max-w-screen-sm {
-  max-width: 640px;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .table-auto {
@@ -642,10 +622,6 @@ video {
   list-style-type: disc;
 }
 
-.place-items-center {
-  place-items: center;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -662,10 +638,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -675,30 +647,27 @@ video {
   background-color: hsl(330 100% 98% / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-}
-
 .bg-eggshell {
   --tw-bg-opacity: 1;
   background-color: hsl(30 54% 90% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-32 {
-  padding: 8rem;
-}
-
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2 {
@@ -706,9 +675,12 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pl-4 {
@@ -719,20 +691,12 @@ video {
   padding-left: 1.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-serif {
@@ -754,6 +718,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -762,9 +731,9 @@ video {
   font-weight: 600;
 }
 
-.text-amber-800 {
+.text-Dark-Charcoal {
   --tw-text-opacity: 1;
-  color: rgb(146 64 14 / var(--tw-text-opacity));
+  color: hsl(24 5% 18% / var(--tw-text-opacity));
 }
 
 .text-Dark-Raspberry {
@@ -772,9 +741,9 @@ video {
   color: hsl(332 51% 32% / var(--tw-text-opacity));
 }
 
-.text-Dark-Charcoal {
+.text-blue-600 {
   --tw-text-opacity: 1;
-  color: hsl(24 5% 18% / var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-nutmeg {
@@ -782,52 +751,31 @@ video {
   color: hsl(14 45% 36% / var(--tw-text-opacity));
 }
 
-.marker\:m-8 *::marker {
-  margin: 2rem;
-}
-
-.marker\:mr-2 *::marker {
-  margin-right: 0.5rem;
-}
-
-.marker\:mr-8 *::marker {
-  margin-right: 2rem;
-}
-
 .marker\:font-bold *::marker {
   font-weight: 700;
-}
-
-.marker\:text-amber-700 *::marker {
-  color: rgb(180 83 9 );
 }
 
 .marker\:text-nutmeg *::marker {
   color: hsl(14 45% 36% );
 }
 
-.marker\:m-8::marker {
-  margin: 2rem;
-}
-
-.marker\:mr-2::marker {
-  margin-right: 0.5rem;
-}
-
-.marker\:mr-8::marker {
-  margin-right: 2rem;
-}
-
 .marker\:font-bold::marker {
   font-weight: 700;
 }
 
-.marker\:text-amber-700::marker {
-  color: rgb(180 83 9 );
-}
-
 .marker\:text-nutmeg::marker {
   color: hsl(14 45% 36% );
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-eggshell {
+    --tw-bg-opacity: 1;
+    background-color: hsl(30 54% 90% / var(--tw-bg-opacity));
+  }
 }
 
 @media (min-width: 768px) {
@@ -835,21 +783,8 @@ video {
     margin: 4rem;
   }
 
-  .md\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .md\:mt-8 {
-    margin-top: 2rem;
-  }
-
   .md\:grid {
     display: grid;
-  }
-
-  .md\:max-w-screen-md {
-    max-width: 768px;
   }
 
   .md\:place-items-center {
@@ -864,8 +799,9 @@ video {
     border-radius: 0.5rem;
   }
 
-  .md\:p-8 {
-    padding: 2rem;
+  .md\:bg-eggshell {
+    --tw-bg-opacity: 1;
+    background-color: hsl(30 54% 90% / var(--tw-bg-opacity));
   }
 
   .md\:px-8 {
@@ -877,7 +813,12 @@ video {
     padding-top: 2rem;
   }
 
-  .md\:pt-10 {
-    padding-top: 2.5rem;
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

@@ -11,29 +11,18 @@
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png"
 		/>
-
 		<title>Frontend Mentor | Recipe page</title>
-
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
-	<body class="md:grid md:place-items-center bg-eggshell md:m-16">
+	<body class="md:grid md:place-items-center bg-white md:bg-eggshell md:m-16">
 		<div class="text-Dark-Charcoal bg-white max-w-screen-md md:rounded-xl">
-			<div class="px-8 pt-8 pb-0">
+			<div class="md:px-8 md:pt-8">
 				<img
 					src="./assets/images/image-omelette.jpeg"
 					alt="A freshly cooked omelette"
-					class="min-w-full h-auto rounded-lg"
+					class="min-w-full h-auto md:rounded-lg"
 				/>
 			</div>
-			<article class="px-8 pb-8 md:pt-8 grid gap-6">
+			<article class="px-8 pb-8 pt-8 grid gap-6">
 				<div class="grid gap-4">
 					<h1 class="font-serif text-4xl">Simple Omelette Recipe</h1>
 					<p>
@@ -155,13 +144,14 @@
 				</div>
 			</article>
 		</div>
-		<div class="attribution p-4">
+		<div class="p-4 text-center text-xs md:text-sm">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
+				class="text-nutmeg font-bold hover:underline"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Robbie</a>.
+			>. Coded by <a href="https://robbie.kiwi/" class="text-nutmeg font-bold hover:underline">Robbie</a>.
 		</div>
 	</body>
 </html>
